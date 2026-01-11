@@ -1282,6 +1282,11 @@ body {
 @media (max-width: 576px) {
 
   /* NAVBAR */
+
+  .logo {
+    justify:center;
+  }
+  
   .navbar {
     flex-direction: column;
     padding: 15px;
@@ -1353,3 +1358,4 @@ body {
     height: auto;
   }
 }
+
