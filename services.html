@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDC Bank | Services</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"><a href="index.html"><img src="images/Picsart_25-02-11_22-19-35-960.png" alt="logo" width="100px"></a></div>
+  <nav class="main-nav">
+    <div class="top-nav-box">
+    <a href="index.html">Home</a>
+    <span class="divider">|</span>
+    <a href="about.html">About Us</a>
+    <span class="divider">|</span>
+    <a href="services.html">Services</a>
+    <span class="divider">|</span>
+    <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Services Page -->
+<section class="services">
+
+  <!-- Section 1: Savings -->
+  <div class="service-section fade-up" id="savings">
+    <h2>Our Savings Facilities</h2>
+    
+    <!-- Fixed Deposits Table -->
+    <div id="Fixed" class="card savings-card">
+      <h3>Fixed Deposits</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Interest Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1 Month</td><td>8%</td></tr>
+          <tr><td>3 Months</td><td>10%</td></tr>
+          <tr><td>6 Months</td><td>11%</td></tr>
+          <tr><td>1 Year</td><td>12%</td></tr>
+          <tr><td>3 Years</td><td>12.5%</td></tr>
+          <tr><td>5 Years</td><td>13%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Other Savings Types -->
+    <div id="saving" class="savings-types">
+      <div class="card">
+        <h3>Normal Savings</h3>
+        <p>A safe and flexible account for everyday deposits with a competitive interest rate of 4% per annum.</p>
+      </div>
+      <div class="card">
+        <h3>Pramuka Children Savings</h3>
+        <p>Designed for young savers to encourage financial habits early, offering an interest rate of 8% per annum.</p>
+      </div>
+      <div class="card">
+        <h3>Dhana Ayojana</h3>
+        <p>A portion of your monthly loan payment is automatically saved in this account. It earns 6% annual interest, 
+          and once your loan is fully repaid, you can withdraw the total savings with interest.</p>
+      </div>
+      <div class="card">
+        <h3>Mandatory Savings</h3>
+        <p>A flexible fixed deposit where you can add funds anytime, earning 4% annual interest to help your savings grow steadily.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Loans -->
+  <div class="service-section fade-up" id="loans">
+    <h2>Loan Facilities</h2>
+    <div id="loan" class="loan-cards">
+      <div class="card">
+        <h3>Business Loans</h3>
+        <p>Provides financing to grow or expand your business, with flexible terms tailored to your needs.</p>
+        <p><b>Maximum Period:</b> 5 Years</p>
+        <p><b>Maximum Amount:</b> LKR 250,000</p>
+      </div>
+      <div class="card">
+        <h3>Entrepreneur Loans</h3>
+        <p>Supports new ventures and innovative ideas, helping entrepreneurs turn their plans into reality.</p>
+        <p><b>Maximum Period:</b> 5 Years</p>
+        <p><b>Maximum Amount:</b> LKR 250,000</p>
+      </div>
+      <div class="card">
+        <h3>Government Loans</h3>
+        <p>Offers low-interest funding for approved projects under government schemes, promoting development and public initiatives.</p>
+        <p><b>Maximum Period:</b> 10 Years</p>
+        <p><b>Maximum Amount:</b> LKR 500,000</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Vehicle Loans -->
+<div class="service-section fade-up" id="vehicle-loans">
+  <h2>Vehicle Loans</h2>
+  <div class="vehicle-cards">
+    <div class="card">
+      <span class="icon-circle"><i class="fas fa-motorcycle"></i></span>
+      <h3>Motorcycles</h3>
+      <p>Maximum Loan Period: 5 Years</p>
+    </div>
+    <div class="card">
+      <span class="icon-circle"><i class="fas fa-truck-pickup"></i></span>
+      <h3>Three Wheelers</h3>
+      <p>Maximum Loan Period: 5 Years</p>
+    </div>
+    <div class="card">
+      <span class="icon-circle"><i class="fas fa-car"></i></span>
+      <h3>Motor Cars</h3>
+      <p>Maximum Loan Period: 5 Years</p>
+    </div>
+  </div>
+</div>
+<div class="contact-button-wrapper">
+  <a href="contact.html" class="btn-contact">For more details Contact Us</a>
+</div>
+
+
+</section>
+
+<!-- JS: Animate on scroll -->
+<script>
+  const sections = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+
+
+   
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- ABOUT -->
+    <div class="footer-column">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="about.html#about-section">Who We Are</a></li>
+        <li><a href="about.html#team-section">Board of Directors</a></li>
+        <li><a href="#">Management</a></li>
+        <li><a href="about.html#history-section">Corporate Information</a></li>
+        <li><a href="#">Awards</a></li>
+      </ul>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Tender Notices</a></li>
+        <li><a href="#">Properties for Sale</a></li>
+        <li><a href="contact.html#branches-section">Branch Network</a></li>
+        <li><a href="#">Customer Charter</a></li>
+        <li><a href="calandar.html">Bank Holidays</a></li>
+      </ul>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-column">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Loan Calculator</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="services.html#services">Rates & Tariffs</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Security Tips</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-column">
+      <h3>PDC Bank [LTD]</h3>
+      <p>
+       <b>Head Office</b><br>
+       River side coner,<br> 
+       Old colombo Road,<br> 
+       Mawanella
+      </p>
+      <p class="contact-info">
+      <i class="fa-solid fa-phone"></i> +94 35 22 33 997<br>
+      <i class="fa-solid fa-envelope"></i>  pdcbank2022@gmail.com
+      </p>
+
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15TSJwcC12Y/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Pramuka Wivasayakathwa Development Cooperative Society. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
