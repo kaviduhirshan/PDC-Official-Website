@@ -1320,6 +1320,7 @@ body {
   .navbar .logo {
     margin: 0 auto 10px;
     display: block;
+    align:center;
   }
 
   nav a {
@@ -1406,3 +1407,4 @@ body {
     height: auto;
   }
 }
+
