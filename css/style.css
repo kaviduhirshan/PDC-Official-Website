@@ -1311,6 +1311,9 @@ body {
   .top-nav-box {
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;     /* stack logo and text vertically on mobile */
+    align-items: center;        /* center logo + text horizontally */
+    text-align: center;         /* center text under the logo */
   }
 
   /* Center logo image in mobile */
