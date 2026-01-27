@@ -1305,11 +1305,18 @@ body {
   .navbar {
     flex-direction: column;
     padding: 15px;
+    align-items: center;
   }
 
   .top-nav-box {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  /* Center logo image in mobile */
+  .navbar .logo {
+    margin: 0 auto 10px;
+    display: block;
   }
 
   nav a {
