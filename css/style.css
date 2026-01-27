@@ -1318,12 +1318,12 @@ body {
 
   /* Center logo image in mobile */
   .navbar .logo {
-    margin: 0 auto 10px 10px 10px;
+    margin: 0 auto 10px;
     display: block;
   }
 
   nav a {
-    margin: 8px;
+    margin: 2px;
   }
 
   /* HERO */
@@ -1406,5 +1406,6 @@ body {
     height: auto;
   }
 }
+
 
 
