@@ -1253,6 +1253,15 @@ body {
     padding: 50px 30px;
   }
 
+  .about,
+  .services,
+  .branches-section,
+  .feedback-section,
+  .branch-gallery,
+  .history-section {
+    padding-inline: 20px;
+  }
+
   /* GRIDS */
   .services-grid,
   .project-grid,
@@ -1268,8 +1277,19 @@ body {
     gap: 40px;
   }
 
+  .history-highlight {
+    flex-direction: column;
+  }
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* BRANCH & SERVICE CARDS */
+  .branch-card,
+  .service-box,
+  .card {
+    margin-inline: 0;
   }
 
   /* CALENDAR */
@@ -1282,11 +1302,6 @@ body {
 @media (max-width: 576px) {
 
   /* NAVBAR */
-
-  .logo {
-    justify:center;
-  }
-  
   .navbar {
     flex-direction: column;
     padding: 15px;
@@ -1331,14 +1346,37 @@ body {
     grid-template-columns: 1fr;
   }
 
+  /* Make flex-based grids stack nicely */
+  .branches-grid,
+  .branch-managers,
+  .savings-types,
+  .loan-cards,
+  .vehicle-cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   /* TEAM CARDS */
   .team-cards {
     grid-template-columns: 1fr;
   }
 
+  /* HISTORY HIGHLIGHTS */
+  .history-highlight {
+    flex-direction: column;
+  }
+
   /* BRANCH CARDS */
   .branch-card iframe {
     height: 180px;
+  }
+
+  /* TABLES – horizontal scroll on very small screens */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* FORMS */
@@ -1358,4 +1396,3 @@ body {
     height: auto;
   }
 }
-
