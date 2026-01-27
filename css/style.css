@@ -1318,9 +1318,8 @@ body {
 
   /* Center logo image in mobile */
   .navbar .logo {
-    margin: 0 auto 10px;
+    margin: 0 auto 10px 10px 10px;
     display: block;
-    align:center;
   }
 
   nav a {
@@ -1407,4 +1406,5 @@ body {
     height: auto;
   }
 }
+
 
